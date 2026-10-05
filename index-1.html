@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Roche Immobilière SARL - BTP, construction, prestations de services, conseil juridique et immobilier.">
+  <title>La Roche Immobilière SARL | Construction & Immobilier</title>
+  <style>
+    :root{
+      --orange:#f45118;
+      --orange2:#ff8a00;
+      --dark:#151515;
+      --light:#fffaf5;
+      --gray:#666;
+      --shadow:0 10px 30px rgba(0,0,0,.10);
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--light);line-height:1.6}
+    header{
+      background:linear-gradient(135deg,#111 0%,#222 55%,#f45118 55%,#ff8a00 100%);
+      color:white;padding:18px 5%;position:sticky;top:0;z-index:20;box-shadow:0 3px 15px #0002
+    }
+    nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:900;font-size:1.15rem;letter-spacing:.5px}
+    .brand span{color:#ff8a00}
+    nav a{color:white;text-decoration:none;font-weight:700;margin-left:18px}
+    nav a:hover{color:#ffd2a8}
+    .hero{max-width:1150px;margin:30px auto;padding:0 20px}
+    .hero-card{background:white;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr}
+    .hero-text{padding:55px 45px;display:flex;flex-direction:column;justify-content:center}
+    .tag{display:inline-block;background:#fff0e6;color:var(--orange);font-weight:800;padding:7px 13px;border-radius:30px;width:max-content}
+    h1{font-size:clamp(2rem,5vw,4rem);line-height:1.05;margin:18px 0}
+    h1 span{color:var(--orange)}
+    .hero-text p{font-size:1.08rem;color:var(--gray)}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .btn{padding:13px 19px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block}
+    .primary{background:var(--orange);color:white}
+    .secondary{border:2px solid var(--orange);color:var(--orange);background:white}
+    .hero-img{width:100%;height:100%;object-fit:cover;min-height:420px}
+    section{max-width:1150px;margin:70px auto;padding:0 20px}
+    .section-title{text-align:center;margin-bottom:35px}
+    .section-title h2{font-size:2.1rem;margin:0 0 8px}
+    .section-title p{color:var(--gray);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;padding:28px;border-radius:18px;box-shadow:var(--shadow);border-top:5px solid var(--orange)}
+    .card h3{margin-top:0;font-size:1.25rem}
+    .card ul{padding-left:20px;margin-bottom:0}
+    .card li{margin:8px 0}
+    .property-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+    .property{background:#111;color:white;border-radius:16px;padding:25px 18px;text-align:center}
+    .property strong{font-size:1.15rem;color:#ff9b43}
+    .why{background:#151515;color:white;border-radius:22px;padding:38px}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .why-item{padding:10px 5px}
+    .why-item b{color:#ff8a00}
+    .contact{background:linear-gradient(135deg,#f45118,#ff8a00);color:white;border-radius:22px;padding:40px}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .contact a{color:white;font-weight:800;text-decoration:none}
+    footer{background:#111;color:white;text-align:center;padding:28px 20px;margin-top:70px}
+    .small{font-size:.9rem;opacity:.8}
+    @media(max-width:850px){
+      .hero-card{grid-template-columns:1fr}
+      .hero-img{min-height:300px}
+      .grid{grid-template-columns:1fr}
+      .property-grid{grid-template-columns:repeat(2,1fr)}
+      .why-grid,.contact-grid{grid-template-columns:1fr}
+      nav{flex-direction:column;align-items:flex-start}
+      nav div:last-child{display:flex;flex-wrap:wrap;gap:8px}
+      nav a{margin-left:0;margin-right:12px}
+    }
+    @media(max-width:500px){
+      .hero-text{padding:35px 25px}
+      .property-grid{grid-template-columns:1fr}
+      section{margin:50px auto}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">LA ROCHE <span>IMMOBILIÈRE</span> SARL</div>
+    <div>
+      <a href="#accueil">Accueil</a>
+      <a href="#activites">Activités</a>
+      <a href="#biens">Biens</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="hero-card">
+      <div class="hero-text">
+        <span class="tag">Votre partenaire immobilier de confiance</span>
+        <h1>La qualité qui <span>bâtit la confiance.</span></h1>
+        <p>La Roche Immobilière SARL vous accompagne dans vos projets de construction, de rénovation, de services techniques et d'immobilier.</p>
+        <div class="buttons">
+          <a class="btn primary" href="tel:+2250507095405">📞 Appeler</a>
+          <a class="btn secondary" href="https://wa.me/2250507095405" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a class="btn secondary" href="#contact">Nous contacter</a>
+        </div>
+      </div>
+      <img class="hero-img" src="visuel-entreprise.jpg" alt="Présentation de La Roche Immobilière SARL">
+    </div>
+  </section>
+
+  <section id="activites">
+    <div class="section-title">
+      <h2>Nos activités détaillées</h2>
+      <p>Des solutions complètes pour vos projets.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>🏗️ BTP & Construction</h3>
+        <ul>
+          <li>Expertise technique & études de faisabilité</li>
+          <li>Conception de plans architecturaux & structurels</li>
+          <li>Élaboration de devis détaillés et estimatifs</li>
+          <li>Construction résidentielle, commerciale et industrielle</li>
+          <li>Finition : revêtement, carrelage, peinture</li>
+          <li>Rénovation et réhabilitation de bâtiments</li>
+          <li>Fourniture de matériel de construction certifié</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>⚙️ Prestations de services</h3>
+        <ul>
+          <li>Installation & maintenance froid & climatisation</li>
+          <li>Travaux d'électricité générale et bâtiment</li>
+          <li>Plomberie sanitaire et installation hydraulique</li>
+          <li>Peinture intérieure & extérieure professionnelle</li>
+          <li>Installation de systèmes de sécurité</li>
+          <li>Forage et adduction d'eau</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>⚖️ Conseil juridique & immobilier</h3>
+        <ul>
+          <li>Conseil et accompagnement immobilier personnalisé</li>
+          <li>Gestion locative et administration de biens</li>
+          <li>Acquisition, vente et location de propriétés</li>
+          <li>Expertise en construction et urbanisme</li>
+          <li>Suivi administratif et démarches foncières</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="biens">
+    <div class="section-title">
+      <h2>Nos biens & projets</h2>
+      <p>Des solutions adaptées aux particuliers et aux professionnels.</p>
+    </div>
+    <div class="property-grid">
+      <div class="property">🏡<br><strong>Villas</strong></div>
+      <div class="property">🌴<br><strong>Terrains</strong></div>
+      <div class="property">🏢<br><strong>Locaux commerciaux</strong></div>
+      <div class="property">🏙️<br><strong>Appartements</strong></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="why">
+      <div class="section-title" style="color:white">
+        <h2>Pourquoi nous choisir ?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">✔️ <b>Qualité garantie</b><br>Un accompagnement orienté vers des réalisations fiables.</div>
+        <div class="why-item">✔️ <b>Équipe qualifiée & expérimentée</b><br>Des compétences adaptées à vos projets.</div>
+        <div class="why-item">✔️ <b>Respect des délais & du budget</b><br>Une organisation pensée pour maîtriser votre projet.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="section-title" style="color:white">
+        <h2>Parlons de votre projet</h2>
+        <p style="color:white">La Roche Immobilière SARL est à votre écoute.</p>
+      </div>
+      <div class="contact-grid">
+        <div>📞 Téléphone<br><a href="tel:+2250507095405">05 07 09 54 05</a><br><a href="tel:+2250151685291">01 51 68 52 91</a></div>
+        <div>✉️ E-mail<br><a href="mailto:rocheimmobiliere@gmail.com">rocheimmobiliere@gmail.com</a></div>
+        <div>📍 Adresse<br>Daloa, en face du stade, en allant au CAFOP</div>
+      </div>
+      <div class="buttons" style="margin-top:28px">
+        <a class="btn" style="background:#111;color:white" href="https://wa.me/2250507095405" target="_blank" rel="noopener">Contacter sur WhatsApp</a>
+        <a class="btn" style="background:white;color:#f45118" href="mailto:rocheimmobiliere@gmail.com">Envoyer un e-mail</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>LA ROCHE IMMOBILIÈRE SARL</strong>
+  <div class="small">Votre partenaire immobilier de confiance — La qualité qui bâtit la confiance.</div>
+</footer>
+</body>
+</html>
